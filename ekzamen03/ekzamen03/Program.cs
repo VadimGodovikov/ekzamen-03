@@ -60,12 +60,13 @@ namespace ekzamen03
             for(int i = 0; i < n; i++)
             {
                 trips.trips[i] = new Trip();
-                Console.Write("Введите продолжительность поездки: ");
+                Console.Write("Введите продолжительность "+ (i+1) +" поездки: ");
                 trips.trips[i].duration = Console.ReadLine();
                 Console.Write("Введите цену поездки: ");
                 trips.trips[i].price = int.Parse(Console.ReadLine());
                 Console.Write("Введите размер группы: ");
                 trips.trips[i].size = int.Parse(Console.ReadLine());
+                Console.WriteLine();
             }
 
             Console.WriteLine();
