@@ -76,7 +76,7 @@ namespace ekzamen03
         static void Main(string[] args)
         {
             Console.Write("Введите количество тур. поездок: ");
-            int n = int.Parse(Console.ReadLine());
+            int n = getInt();
             Console.WriteLine();
 
             TouristicOperator trips = new TouristicOperator(n);
@@ -86,9 +86,9 @@ namespace ekzamen03
                 Console.Write("Введите продолжительность "+ (i+1) +" поездки: ");
                 trips.trips[i].duration = Console.ReadLine();
                 Console.Write("Введите цену поездки: ");
-                trips.trips[i].price = int.Parse(Console.ReadLine());
+                trips.trips[i].price = getInt();
                 Console.Write("Введите размер группы: ");
-                trips.trips[i].size = int.Parse(Console.ReadLine());
+                trips.trips[i].size = getInt();
                 Console.WriteLine();
             }
 
