@@ -50,6 +50,29 @@ namespace ekzamen03
 
         }
 
+        static int getInt()
+        {
+            int num;
+            while (true)
+            {
+                if(int.TryParse(Console.ReadLine(), out num))
+                {
+                    if(num <= 0)
+                    {
+                        Console.WriteLine("Вы ввели некорректное число. Попробуйте ещё раз!");
+                    }
+                    else
+                    {
+                        return num;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Вы ввели некорректное число. Попробуйте ещё раз!");
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.Write("Введите количество тур. поездок: ");
