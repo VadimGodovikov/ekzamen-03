@@ -1,0 +1,7 @@
+D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\obj\Debug\ekzamen03.csprojAssemblyReference.cache
+D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\obj\Debug\ekzamen03.csproj.CoreCompileInputs.cache
+D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\bin\Debug\ekzamen03.exe.config
+D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\bin\Debug\ekzamen03.exe
+D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\bin\Debug\ekzamen03.pdb
+D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\obj\Debug\ekzamen03.exe
+D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\obj\Debug\ekzamen03.pdb
