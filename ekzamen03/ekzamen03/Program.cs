@@ -33,26 +33,19 @@ namespace ekzamen03
                 trips = trips.OrderBy(p => p.price).ThenByDescending(s => s.size).ToArray();
             }
 
-            public void WriteToFile(StreamWriter sw, int n)
+            public void WriteToFile()
             {
-                for(int i = 0; i<n; i++)
+                using (StreamWriter sw = new StreamWriter(@"D:\Users\stu-pkspk220\source\repos\VadimGodovikov\ekzamen-03\ekzamen03\ekzamen03\trips.txt")) // запись в файл
                 {
-                    sw.WriteLine("Продолжительность: " + trips[i].duration);
-                    sw.WriteLine("Цена: " + trips[i].price);
-                    sw.WriteLine("Размер группы: " + trips[i].size);
-                    sw.WriteLine();
+                    for (int i = 0; i < n; i++)
+                    {
+                        sw.WriteLine("Продолжительность: " + trips[i].duration);
+                        sw.WriteLine("Цена: " + trips[i].price);
+                        sw.WriteLine("Размер группы: " + trips[i].size);
+                        sw.WriteLine();
+                    }
                 }
-            }
-
-            public void Print()
-            {
-                for (int i = 0; i < n; i++)
-                {
-                    Console.WriteLine("Продолжительность: " + trips[i].duration);
-                    Console.WriteLine("Цена: " + trips[i].price);
-                    Console.WriteLine("Размер группы: " + trips[i].size);
-                    Console.WriteLine();
-                }
+                
             }
 
         }
@@ -77,8 +70,9 @@ namespace ekzamen03
 
             Console.WriteLine();
             trips.SortTrip();
-            
+            trips.WriteToFile();
 
+            Console.WriteLine("Данные о поездках записаны в новый файл trips.txt");
 
         }
     }
